@@ -2,18 +2,18 @@ package fr.sdv.banque.entites;
 
 public class Compte {
 
-    private int id;
+    private int numero;
     private double solde;
 
-    public Compte(int id, double solde) {
-        this.id = id;
+    public Compte(int numero, double solde) {
+        this.numero = numero;
         this.solde = solde;
     }
 
     @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder("Compte{");
-        sb.append("id=").append(id);
+        sb.append("id=").append(numero);
         sb.append(", solde=").append(solde);
         sb.append('}');
         return sb.toString();
