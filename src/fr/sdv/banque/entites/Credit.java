@@ -3,7 +3,7 @@ package fr.sdv.banque.entites;
 public class Credit extends Operation {
 
 
-    public Credit(int montant, String date) {
+    public Credit(float montant, String date) {
         super(montant, date);
     }
 

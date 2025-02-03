@@ -1,25 +1,34 @@
 package fr.sdv.banque.entites;
 
 public abstract class Operation {
-    private String date;
-    private int montant;
+    protected String date;
+    protected float montant;
 
-    public Operation(int montant, String date) {
+    public Operation(float montant, String date) {
         this.montant = montant;
         this.date = date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    public void setMontant(float montant) {
+        this.montant = montant;
     }
 
     public String getDate() {
         return date;
     }
 
-    public int getMontant() {
+    public float getMontant() {
         return montant;
     }
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("Operation{");
+        final StringBuilder sb = new StringBuilder("Operation{ ");
+        sb.append(afficherType()).append(" : ");
         sb.append("date='").append(date).append('\'');
         sb.append(", montant=").append(montant);
         sb.append('}');

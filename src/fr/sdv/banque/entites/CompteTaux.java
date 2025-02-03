@@ -2,15 +2,17 @@ package fr.sdv.banque.entites;
 
 public class CompteTaux extends Compte {
 
-    private double remuneration;
+    private float remuneration;
 
-    public CompteTaux(int id, double solde, double remuneration) {
+    public CompteTaux(int id, float solde, float remuneration) {
         super(id, solde);
         this.remuneration = remuneration;
     }
 
     @Override
     public String toString() {
-        return super.toString() + "rémunération: " + remuneration;
+        final StringBuilder sb = new StringBuilder(super.toString());
+        sb.append(", remuneration=").append(remuneration);
+        return sb.toString();
     }
 }

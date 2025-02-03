@@ -3,19 +3,18 @@ package fr.sdv.banque.entites;
 public class Compte {
 
     private int numero;
-    private double solde;
+    private float solde;
 
-    public Compte(int numero, double solde) {
+    public Compte(int numero, float solde) {
         this.numero = numero;
         this.solde = solde;
     }
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("Compte{");
+        final StringBuilder sb = new StringBuilder("Compte: ");
         sb.append("id=").append(numero);
         sb.append(", solde=").append(solde);
-        sb.append('}');
         return sb.toString();
     }
 }

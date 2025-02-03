@@ -14,13 +14,12 @@ public class TestOperation {
 
         operations.add(new Credit(1000,"1/1/2025"));
         operations.add(new Debit(250,"2/1/2025"));
-        operations.add(new Credit(100,"1/1/2025"));
-        operations.add(new Debit(300,"1/1/2025"));
+        operations.add(new Credit(100,"2/1/2025"));
+        operations.add(new Debit(300,"3/1/2025"));
 
         double total = 0;
 
-        for(Operation operation: operations){
-            System.out.println(operation.afficherType());
+        for(Operation operation: operations){ 
             System.out.println(operation);
 
             if(operation.afficherType() == "Crédit"){
