@@ -1,15 +1,16 @@
 import fr.sdv.banque.entites.Compte;
 import fr.sdv.banque.entites.CompteTaux;
 
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
-        Compte[] tableau = new Compte[2];
+        ArrayList<Object> nombres = new ArrayList<>();
 
-        tableau[0] = new Compte(1, 25.43F);
-        tableau[1] = new CompteTaux(2, 13.99F, 10);
-
-        for (Compte compte : tableau) {
-            System.out.println(compte);
+        for(int i = 1; i <= 100; i++){
+            nombres.add(i);
         }
+
+        System.out.println(nombres.size());
     }
 }

@@ -1,4 +1,8 @@
-package fr.sdv.geometrie.entites;
+package fr.sdv.geometrie;
+
+import fr.sdv.geometrie.entites.Cercle;
+import fr.sdv.geometrie.entites.ObjetGeometrique;
+import fr.sdv.geometrie.entites.Rectangle;
 
 public class TestObjetGeometrique {
     public static void main(String[] args) {
